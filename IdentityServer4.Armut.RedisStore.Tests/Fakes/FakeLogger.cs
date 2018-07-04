@@ -1,0 +1,32 @@
+﻿using System;
+using System.Collections.Generic;
+using Microsoft.Extensions.Logging;
+
+namespace IdentityServer4.Armut.RedisStore.Tests.Fakes
+{
+    public class FakeLogger<T> : ILogger<T>
+    {
+
+        private Dictionary<string, int> accessCount = new Dictionary<string, int>();
+
+        public IReadOnlyDictionary<string, int> AccessCount => accessCount;
+
+        public IDisposable BeginScope<TState>(TState state)
+        {
+            return null;
+        }
+
+        public bool IsEnabled(LogLevel logLevel)
+        {
+            return true;
+        }
+
+        public void Log<TState>(LogLevel logLevel, EventId eventId, TState state, Exception exception, Func<TState, Exception, string> formatter)
+        {
+            if (accessCount.ContainsKey(state.ToString()))
+            { accessCount[state.ToString()] += 1; }
+            else
+            { accessCount[state.ToString()] = 1; }
+        }
+    }
+}
