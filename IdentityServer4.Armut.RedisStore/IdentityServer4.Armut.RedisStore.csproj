@@ -4,28 +4,27 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <Description>Armut Redis Store for operational data and for Caching of Identity Server 4</Description>
-    <Authors>Armut</Authors>
-    <Company>Armut</Company>
+    <Authors>Armut.com</Authors>
+    <Company>Armut.com</Company>
     <AssemblyVersion>1.4.2.0</AssemblyVersion>
-    <PackageReleaseNotes>Added implementation for Caching Profile Service.</PackageReleaseNotes>
     <Version>1.4.2</Version>
     <PackageProjectUrl>https://github.com/armutcom/IdentityServer4.Contrib.RedisStore</PackageProjectUrl>
-    <PackageIconUrl>https://identityserver.github.io/Documentation/assets/images/icons/IDserver_icon128.jpg</PackageIconUrl>
+    <PackageIconUrl>https://armut.com/favicon.ico</PackageIconUrl>
     <PackageTags>Redis Store IdentityServer4</PackageTags>
-    <Copyright>Armut</Copyright>
+    <Copyright>Armut.com © 2018</Copyright>
     <FileVersion>1.4.2.0</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\netstandard1.5\IdentityServer4.Contrib.RedisStore.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\netstandard1.5\IdentityServer4.Armut.RedisStore.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>bin\Release\netstandard1.5\IdentityServer4.Contrib.RedisStore.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\netstandard1.5\IdentityServer4.Armut.RedisStore.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="IdentityServer4.Contrib.RedisStore.nuspec" />
+    <None Remove="IdentityServer4.Armut.RedisStore.nuspec" />
   </ItemGroup>
 
   <ItemGroup>

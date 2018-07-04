@@ -1,14 +1,20 @@
-<?xml version="1.0"?>
-<package >
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
-    <id>$id$</id>
+    <id>IdentityServer4.Armut.RedisStore</id>
     <version>$version$</version>
-    <title>$title$</title>
-    <authors>Armut</authors>
-    <owners>Armut</owners>
+    <authors>Armut.com</authors>
+    <owners>Armut.com</owners>
+    <iconUrl>https://armut.com/favicon.ico</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>$description$</description>
-    <copyright>Copyright 2017</copyright>
-    <tags>IdentityServer IdentityServer4 Redis Store</tags>
+    <description>Armut IdentityServer4 Redis Store</description>
+    <copyright>$copyright$</copyright>
+    <dependencies>
+      <dependency id="IdentityServer4" version="2.2.0" />
+      <dependency id="Newtonsoft.Json" version="10.0.2" />
+      <dependency id="ServiceStack.Interfaces" version="5.1.0" />
+      <dependency id="StackExchange.Redis.StrongName" version="1.2.6" />
+      <dependency id="System.ValueTuple" version="4.4.0" />
+    </dependencies>
   </metadata>
 </package>
