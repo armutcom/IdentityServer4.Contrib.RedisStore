@@ -1,5 +1,13 @@
 # IdentityServer4.Contrib.RedisStore
 
+[![Build Status](https://travis-ci.org/armutcom/IdentityServer4.Contrib.RedisStore.svg?branch=master)](https://travis-ci.org/armutcom/IdentityServer4.Contrib.RedisStore)
+
+Forked from [IdentityServer4.Contrib.RedisStore](https://github.com/AliBazzi/IdentityServer4.Contrib.RedisStore)
+
+-------
+
+## Original Readme
+
 IdentityServer4.Contrib.RedisStore is a persistence layer using [Redis](https://redis.io) DB for operational data and for caching capability for Identity Server 4. Specifically, this store provides implementation for [IPersistedGrantStore](http://docs.identityserver.io/en/release/topics/deployment.html#operational-data) and [ICache<T>](http://docs.identityserver.io/en/release/topics/startup.html#caching).
 
 ## How to use
